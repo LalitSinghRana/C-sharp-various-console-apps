@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Day3Eercise1/1.0.0": {
+        "runtime": {
+          "Day3Eercise1.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Day3Eercise1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

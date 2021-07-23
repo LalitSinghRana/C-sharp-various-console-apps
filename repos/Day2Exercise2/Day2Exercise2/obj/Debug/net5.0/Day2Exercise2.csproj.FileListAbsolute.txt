@@ -1,0 +1,16 @@
+C:\Users\lalitrana\source\repos\Day2Exercise2\Day2Exercise2\obj\Debug\net5.0\Day2Exercise2.csproj.AssemblyReference.cache
+C:\Users\lalitrana\source\repos\Day2Exercise2\Day2Exercise2\obj\Debug\net5.0\Day2Exercise2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lalitrana\source\repos\Day2Exercise2\Day2Exercise2\obj\Debug\net5.0\Day2Exercise2.AssemblyInfoInputs.cache
+C:\Users\lalitrana\source\repos\Day2Exercise2\Day2Exercise2\obj\Debug\net5.0\Day2Exercise2.AssemblyInfo.cs
+C:\Users\lalitrana\source\repos\Day2Exercise2\Day2Exercise2\obj\Debug\net5.0\Day2Exercise2.csproj.CoreCompileInputs.cache
+C:\Users\lalitrana\source\repos\Day2Exercise2\Day2Exercise2\bin\Debug\net5.0\Day2Exercise2.exe
+C:\Users\lalitrana\source\repos\Day2Exercise2\Day2Exercise2\bin\Debug\net5.0\Day2Exercise2.deps.json
+C:\Users\lalitrana\source\repos\Day2Exercise2\Day2Exercise2\bin\Debug\net5.0\Day2Exercise2.runtimeconfig.json
+C:\Users\lalitrana\source\repos\Day2Exercise2\Day2Exercise2\bin\Debug\net5.0\Day2Exercise2.runtimeconfig.dev.json
+C:\Users\lalitrana\source\repos\Day2Exercise2\Day2Exercise2\bin\Debug\net5.0\Day2Exercise2.dll
+C:\Users\lalitrana\source\repos\Day2Exercise2\Day2Exercise2\bin\Debug\net5.0\ref\Day2Exercise2.dll
+C:\Users\lalitrana\source\repos\Day2Exercise2\Day2Exercise2\bin\Debug\net5.0\Day2Exercise2.pdb
+C:\Users\lalitrana\source\repos\Day2Exercise2\Day2Exercise2\obj\Debug\net5.0\Day2Exercise2.dll
+C:\Users\lalitrana\source\repos\Day2Exercise2\Day2Exercise2\obj\Debug\net5.0\ref\Day2Exercise2.dll
+C:\Users\lalitrana\source\repos\Day2Exercise2\Day2Exercise2\obj\Debug\net5.0\Day2Exercise2.pdb
+C:\Users\lalitrana\source\repos\Day2Exercise2\Day2Exercise2\obj\Debug\net5.0\Day2Exercise2.genruntimeconfig.cache

@@ -1,0 +1,16 @@
+C:\Users\lalitrana\source\repos\Day3Exercise1\Day3Eercise1\bin\Debug\net5.0\Day3Eercise1.exe
+C:\Users\lalitrana\source\repos\Day3Exercise1\Day3Eercise1\bin\Debug\net5.0\Day3Eercise1.deps.json
+C:\Users\lalitrana\source\repos\Day3Exercise1\Day3Eercise1\bin\Debug\net5.0\Day3Eercise1.runtimeconfig.json
+C:\Users\lalitrana\source\repos\Day3Exercise1\Day3Eercise1\bin\Debug\net5.0\Day3Eercise1.runtimeconfig.dev.json
+C:\Users\lalitrana\source\repos\Day3Exercise1\Day3Eercise1\bin\Debug\net5.0\Day3Eercise1.dll
+C:\Users\lalitrana\source\repos\Day3Exercise1\Day3Eercise1\bin\Debug\net5.0\ref\Day3Eercise1.dll
+C:\Users\lalitrana\source\repos\Day3Exercise1\Day3Eercise1\bin\Debug\net5.0\Day3Eercise1.pdb
+C:\Users\lalitrana\source\repos\Day3Exercise1\Day3Eercise1\obj\Debug\net5.0\Day3Eercise1.csproj.AssemblyReference.cache
+C:\Users\lalitrana\source\repos\Day3Exercise1\Day3Eercise1\obj\Debug\net5.0\Day3Eercise1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lalitrana\source\repos\Day3Exercise1\Day3Eercise1\obj\Debug\net5.0\Day3Eercise1.AssemblyInfoInputs.cache
+C:\Users\lalitrana\source\repos\Day3Exercise1\Day3Eercise1\obj\Debug\net5.0\Day3Eercise1.AssemblyInfo.cs
+C:\Users\lalitrana\source\repos\Day3Exercise1\Day3Eercise1\obj\Debug\net5.0\Day3Eercise1.csproj.CoreCompileInputs.cache
+C:\Users\lalitrana\source\repos\Day3Exercise1\Day3Eercise1\obj\Debug\net5.0\Day3Eercise1.dll
+C:\Users\lalitrana\source\repos\Day3Exercise1\Day3Eercise1\obj\Debug\net5.0\ref\Day3Eercise1.dll
+C:\Users\lalitrana\source\repos\Day3Exercise1\Day3Eercise1\obj\Debug\net5.0\Day3Eercise1.pdb
+C:\Users\lalitrana\source\repos\Day3Exercise1\Day3Eercise1\obj\Debug\net5.0\Day3Eercise1.genruntimeconfig.cache
