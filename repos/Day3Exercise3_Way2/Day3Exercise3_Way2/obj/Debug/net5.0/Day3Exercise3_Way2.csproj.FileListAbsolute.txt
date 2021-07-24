@@ -1,0 +1,16 @@
+C:\Users\lalitrana\source\repos\Day3Exercise3_Way2\Day3Exercise3_Way2\bin\Debug\net5.0\Day3Exercise3_Way2.exe
+C:\Users\lalitrana\source\repos\Day3Exercise3_Way2\Day3Exercise3_Way2\bin\Debug\net5.0\Day3Exercise3_Way2.deps.json
+C:\Users\lalitrana\source\repos\Day3Exercise3_Way2\Day3Exercise3_Way2\bin\Debug\net5.0\Day3Exercise3_Way2.runtimeconfig.json
+C:\Users\lalitrana\source\repos\Day3Exercise3_Way2\Day3Exercise3_Way2\bin\Debug\net5.0\Day3Exercise3_Way2.runtimeconfig.dev.json
+C:\Users\lalitrana\source\repos\Day3Exercise3_Way2\Day3Exercise3_Way2\bin\Debug\net5.0\Day3Exercise3_Way2.dll
+C:\Users\lalitrana\source\repos\Day3Exercise3_Way2\Day3Exercise3_Way2\bin\Debug\net5.0\ref\Day3Exercise3_Way2.dll
+C:\Users\lalitrana\source\repos\Day3Exercise3_Way2\Day3Exercise3_Way2\bin\Debug\net5.0\Day3Exercise3_Way2.pdb
+C:\Users\lalitrana\source\repos\Day3Exercise3_Way2\Day3Exercise3_Way2\obj\Debug\net5.0\Day3Exercise3_Way2.csproj.AssemblyReference.cache
+C:\Users\lalitrana\source\repos\Day3Exercise3_Way2\Day3Exercise3_Way2\obj\Debug\net5.0\Day3Exercise3_Way2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lalitrana\source\repos\Day3Exercise3_Way2\Day3Exercise3_Way2\obj\Debug\net5.0\Day3Exercise3_Way2.AssemblyInfoInputs.cache
+C:\Users\lalitrana\source\repos\Day3Exercise3_Way2\Day3Exercise3_Way2\obj\Debug\net5.0\Day3Exercise3_Way2.AssemblyInfo.cs
+C:\Users\lalitrana\source\repos\Day3Exercise3_Way2\Day3Exercise3_Way2\obj\Debug\net5.0\Day3Exercise3_Way2.csproj.CoreCompileInputs.cache
+C:\Users\lalitrana\source\repos\Day3Exercise3_Way2\Day3Exercise3_Way2\obj\Debug\net5.0\Day3Exercise3_Way2.dll
+C:\Users\lalitrana\source\repos\Day3Exercise3_Way2\Day3Exercise3_Way2\obj\Debug\net5.0\ref\Day3Exercise3_Way2.dll
+C:\Users\lalitrana\source\repos\Day3Exercise3_Way2\Day3Exercise3_Way2\obj\Debug\net5.0\Day3Exercise3_Way2.pdb
+C:\Users\lalitrana\source\repos\Day3Exercise3_Way2\Day3Exercise3_Way2\obj\Debug\net5.0\Day3Exercise3_Way2.genruntimeconfig.cache

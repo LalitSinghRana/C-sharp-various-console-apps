@@ -9,6 +9,22 @@ namespace Day3Exercise3_Way1
         static void Main(string[] args)
         {
             Console.WriteLine("There is no need for the application to be user interactive.");
+            Random rdm = new Random();
+
+            var myQ = new PriorityQueue<int>();
+            for (int i = 1; i < 11; i++)
+            {
+                
+                myQ.Enqueue(rdm.Next(10), rdm.Next());
+            }
+
+            while (myQ.count > 0)
+            {
+                Console.WriteLine("\nCurrent count = {0}", myQ.count);
+                Console.WriteLine("Current highest priority : key = {0}, value = {1}", myQ.GetHighestPriority(), myQ.Peek().ToString());
+                var temp = myQ.Dequeue();
+                Console.WriteLine("Top priority element '{0}' removed.", temp);
+            }
         }
     }
 
@@ -45,7 +61,9 @@ namespace Day3Exercise3_Way1
         {
             try
             {
-                elements.Add(priority, (IList<T>)(object)item);
+                var temp = new List<T>();
+                temp.Add(item);
+                elements.Add(priority, temp);
             }
             catch (ArgumentException)
             {
@@ -56,10 +74,10 @@ namespace Day3Exercise3_Way1
         public T Peek()
         {
             if (elements.Count == 0) throw new InvalidOperationException("Queue is empty.");
-            return (T)elements.Last().Value;
+            return (T)elements.Last().Value.ElementAt(0);
         }
 
-        private int GetHighestPriority()
+        public int GetHighestPriority()
         {
             if(elements.Count == 0) throw new InvalidOperationException("Queue is empty.");
             return elements.Last().Key;
