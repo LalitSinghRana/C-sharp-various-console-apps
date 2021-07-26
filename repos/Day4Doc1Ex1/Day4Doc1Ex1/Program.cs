@@ -14,8 +14,7 @@ namespace Day4Doc1Ex1
 
         public static bool greaterThanFive(int value)
         {
-            if (value > 5) return true;
-            else return false;
+            return value > 5;
         }
         public static bool find3k(int value)
         {
@@ -97,3 +96,9 @@ namespace Day4Doc1Ex1
         }
     }
 }
+
+//bool LesserThan5(int num) => num < 5;
+//Func<int, bool> func2 = new Func<int, bool>(LesserThan5);
+//var temp4 = myList.Where(func2);
+//foreach (var num in temp4) Console.Write(num + ", ");
+//Console.WriteLine("\n");

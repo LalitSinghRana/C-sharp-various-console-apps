@@ -19,7 +19,7 @@ namespace Day4Doc1Ex2
             for (int i=1; i<10; i++)
             {
                 Product p = new Product(i, rdm.Next(100), false);
-                AddEventHandler del = new AddEventHandler(p.HandleSomethingAdded);
+                AddEventHandler del = new AddEventHandler(p.HandleAdded);
                 del(d, p, rdm.Next(10), ref tv);
             }
             Console.WriteLine("\ntv after adding = {0}", tv);
@@ -29,7 +29,7 @@ namespace Day4Doc1Ex2
             {
                 if (temp.Key.id % 2 == 0)
                 {
-                    AddEventHandler del = new AddEventHandler(temp.Key.HandleSomethingRemoved);
+                    AddEventHandler del = new AddEventHandler(temp.Key.HandleRemoved);
                     del(d, temp.Key, temp.Value, ref tv);
                 }
             }
@@ -39,7 +39,7 @@ namespace Day4Doc1Ex2
             {
                 if (temp.Key.id % 2 != 0)
                 {
-                    AddEventHandler del = new AddEventHandler(temp.Key.HandleSomethingUpdated);
+                    AddEventHandler del = new AddEventHandler(temp.Key.HandleUpdated);
                     del(d, temp.Key, rdm.Next(20), ref tv);
                 }
             }
@@ -49,7 +49,7 @@ namespace Day4Doc1Ex2
             {
                 if (temp.Key.id % 3 == 0)
                 {
-                    AddEventHandler del = new AddEventHandler(temp.Key.HandleSomethingPrice);
+                    AddEventHandler del = new AddEventHandler(temp.Key.HandlePrice);
                     del(d, temp.Key, rdm.Next(50), ref tv);
                 }
             }
@@ -70,39 +70,39 @@ namespace Day4Doc1Ex2
                 isDefective = c;
             }
 
-            public void HandleSomethingAdded(Dictionary<Product, int> d, Product p, int n, ref int tv)
+            public void HandleAdded(Dictionary<Product, int> d, Product p, int n, ref int tv)
             {
                 d.Add(p, n);
                 tv += n * p.price;
             }
-            public void HandleSomethingRemoved(Dictionary<Product, int> d, Product p, int n, ref int tv)
+            public void HandleRemoved(Dictionary<Product, int> d, Product p, int n, ref int tv)
             {
                 d.Remove(p);
                 tv -= n * p.price;
             }
-            public void HandleSomethingUpdated(Dictionary<Product, int> d, Product p, int n, ref int tv)
+            public void HandleUpdated(Dictionary<Product, int> d, Product p, int n, ref int tv)
             {
                 int a = d[p];
                 d[p] = n;
                 tv += (n-a) * p.price;
             }
 
-            public void HandleSomethingPrice(Dictionary<Product, int> d, Product p, int n, ref int tv)
+            public void HandlePrice(Dictionary<Product, int> d, Product p, int n, ref int tv)
             {
                 Product x = new Product(p.id, n, p.isDefective);
                 int a = d[p];
                 tv -= a * p.price;
                 d.Remove(p);
 
-                AddEventHandler del = new AddEventHandler(p.HandleSomethingAdded);
+                AddEventHandler del = new AddEventHandler(p.HandleAdded);
                 del(d, x, a, ref tv);
             }
 
-            public void HandleSomethingDefect(Dictionary<Product, int> d, Product p, int n, ref int tv)
+            public void HandleDefect(Dictionary<Product, int> d, Product p, int n, ref int tv)
             {
                 if(n==0)
                 {
-                    AddEventHandler del = new AddEventHandler(p.HandleSomethingRemoved);
+                    AddEventHandler del = new AddEventHandler(p.HandleRemoved);
                     del(d, p, d[p], ref tv);
                 } 
             }

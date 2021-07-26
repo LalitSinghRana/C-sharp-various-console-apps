@@ -1,0 +1,16 @@
+C:\Users\lalitrana\source\repos\Day4Doc2Ex2\Day4Doc2Ex2\bin\Debug\net5.0\Day4Doc2Ex2.exe
+C:\Users\lalitrana\source\repos\Day4Doc2Ex2\Day4Doc2Ex2\bin\Debug\net5.0\Day4Doc2Ex2.deps.json
+C:\Users\lalitrana\source\repos\Day4Doc2Ex2\Day4Doc2Ex2\bin\Debug\net5.0\Day4Doc2Ex2.runtimeconfig.json
+C:\Users\lalitrana\source\repos\Day4Doc2Ex2\Day4Doc2Ex2\bin\Debug\net5.0\Day4Doc2Ex2.runtimeconfig.dev.json
+C:\Users\lalitrana\source\repos\Day4Doc2Ex2\Day4Doc2Ex2\bin\Debug\net5.0\Day4Doc2Ex2.dll
+C:\Users\lalitrana\source\repos\Day4Doc2Ex2\Day4Doc2Ex2\bin\Debug\net5.0\ref\Day4Doc2Ex2.dll
+C:\Users\lalitrana\source\repos\Day4Doc2Ex2\Day4Doc2Ex2\bin\Debug\net5.0\Day4Doc2Ex2.pdb
+C:\Users\lalitrana\source\repos\Day4Doc2Ex2\Day4Doc2Ex2\obj\Debug\net5.0\Day4Doc2Ex2.csproj.AssemblyReference.cache
+C:\Users\lalitrana\source\repos\Day4Doc2Ex2\Day4Doc2Ex2\obj\Debug\net5.0\Day4Doc2Ex2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lalitrana\source\repos\Day4Doc2Ex2\Day4Doc2Ex2\obj\Debug\net5.0\Day4Doc2Ex2.AssemblyInfoInputs.cache
+C:\Users\lalitrana\source\repos\Day4Doc2Ex2\Day4Doc2Ex2\obj\Debug\net5.0\Day4Doc2Ex2.AssemblyInfo.cs
+C:\Users\lalitrana\source\repos\Day4Doc2Ex2\Day4Doc2Ex2\obj\Debug\net5.0\Day4Doc2Ex2.csproj.CoreCompileInputs.cache
+C:\Users\lalitrana\source\repos\Day4Doc2Ex2\Day4Doc2Ex2\obj\Debug\net5.0\Day4Doc2Ex2.dll
+C:\Users\lalitrana\source\repos\Day4Doc2Ex2\Day4Doc2Ex2\obj\Debug\net5.0\ref\Day4Doc2Ex2.dll
+C:\Users\lalitrana\source\repos\Day4Doc2Ex2\Day4Doc2Ex2\obj\Debug\net5.0\Day4Doc2Ex2.pdb
+C:\Users\lalitrana\source\repos\Day4Doc2Ex2\Day4Doc2Ex2\obj\Debug\net5.0\Day4Doc2Ex2.genruntimeconfig.cache
