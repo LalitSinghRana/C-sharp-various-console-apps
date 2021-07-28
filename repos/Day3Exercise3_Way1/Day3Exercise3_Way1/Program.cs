@@ -8,22 +8,19 @@ namespace Day3Exercise3_Way1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("There is no need for the application to be user interactive.");
-            Random rdm = new Random();
-
             var myQ = new PriorityQueue<int>();
-            for (int i = 1; i < 11; i++)
-            {
-                
-                myQ.Enqueue(rdm.Next(10), rdm.Next());
-            }
+            for (int i = 0; i < 10; i++) myQ.Enqueue(i/2, i*100);
+
+            myQ.Enqueue(15, 15);
+            Console.WriteLine("\nContains 14 : {0}",myQ.Contains(14));
+            Console.WriteLine("Contains 15 : {0}", myQ.Contains(15));
 
             while (myQ.count > 0)
             {
                 Console.WriteLine("\nCurrent count = {0}", myQ.count);
-                Console.WriteLine("Current highest priority : key = {0}, value = {1}", myQ.GetHighestPriority(), myQ.Peek().ToString());
-                var temp = myQ.Dequeue();
-                Console.WriteLine("Top priority element '{0}' removed.", temp);
+                Console.WriteLine("Current highest priority = {0}; value = {1}", myQ.GetHighestPriority(), myQ.Peek().ToString());
+                var temp2 = myQ.Dequeue();
+                Console.WriteLine("Top priority element '{0}' removed.", temp2);
             }
         }
     }
@@ -48,7 +45,8 @@ namespace Day3Exercise3_Way1
 
         public bool Contains (T item)
         {
-            return elements.Contains((KeyValuePair<int, IList<T>>)(object)item);
+            foreach(var i in elements) if(i.Value.Contains(item)) return true;
+            return false;
         }
 
         public T Dequeue()

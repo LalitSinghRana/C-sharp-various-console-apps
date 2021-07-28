@@ -8,20 +8,25 @@ namespace Day3Exercise3_Way2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("There is no need for the application to be user interactive.");
-            Random rdm = new Random();
+            Random rdm = new Random(500);
 
-            var myQ = new PriorityQueue2<int>();
-            for (int i = 1; i < 11; i++)
+            var myQ = new PriorityQueue2<PQ2>();
+            for (int i = 1; i < 9; i++)
             {
-                myQ.Enqueue(rdm.Next());
+                var temp = new PQ2(i/3, i*100);
+                myQ.Enqueue(temp);
             }
+
+            var temp2 = new PQ2(14, 14);
+            myQ.Enqueue(temp2);
+            Console.WriteLine("Contains 14 : {0}", myQ.Contains(temp2));
+            Console.WriteLine("Contains 15 : {0}", myQ.Contains(new PQ2(15, 15)));
 
             while (myQ.count > 0)
             {
                 Console.WriteLine("\nCurrent count = {0}", myQ.count);
-                Console.WriteLine("Current highest priority : key = {0}, value = {1}", myQ.GetHighestPriority(), myQ.Peek());
-                var temp = myQ.Dequeue();
+                Console.WriteLine("Current highest priority = {0}, value = {1}", myQ.GetHighestPriority(), myQ.Peek().value);
+                var temp = myQ.Dequeue().value;
                 Console.WriteLine("Top priority element '{0}' removed.", temp);
             }
         }
@@ -36,15 +41,27 @@ namespace Day3Exercise3_Way2
         }
     }
 
-    class PriorityQueue2<T> where T : IEquatable<T> //, IPriority
+    class PQ2 : IPriority, IEquatable<PQ2>
     {
-        private int _num = 0;
-        private IDictionary<int, IList<T>> elements;
+        public int Priority { get; set; }
 
-        public int Priority
+        public int value { get; set; }
+
+        public PQ2(int p, int val)
         {
-            get => _num;
+            Priority = p;
+            value = val;
         }
+
+        public bool Equals(PQ2 other)
+        {
+            return this.Priority == other.Priority;
+        }
+    }
+
+    class PriorityQueue2<T> where T : IEquatable<T> , IPriority
+    {
+        private IDictionary<int, IList<T>> elements;
 
         public PriorityQueue2()
         {
@@ -53,7 +70,7 @@ namespace Day3Exercise3_Way2
 
         public PriorityQueue2(IEnumerable<T> _elements) : this()
         {
-            this.elements = (IDictionary<int, IList<T>>)_elements;
+            elements = (IDictionary<int, IList<T>>)_elements;
         }
         public int count
         {
@@ -62,33 +79,31 @@ namespace Day3Exercise3_Way2
 
         public bool Contains(T item)
         {
-            return elements.Contains((KeyValuePair<int, IList<T>>)(object)item);
+            foreach(var i in elements)
+            {
+                if (i.Value.Contains(item)) return true;
+            }
+            return false;
         }
 
         public T Dequeue()
         {
             var max = Peek();
-            elements.Remove(elements.Keys.Last());
+            elements.Last().Value.RemoveAt(elements.Last().Value.Count - 1);
+            if (elements.Last().Value.Count == 0) elements.Remove(elements.Last().Key);
             return max;
         }
         public void Enqueue(T item)
         {
-            try
-            {
-                var temp = new List<T>();
-                temp.Add(item);
-                elements.Add(++_num, temp);
-            }
-            catch (ArgumentException)
-            {
-                Console.WriteLine("An element with Key = \"{0}\" already exists.", _num);
-            }
-
+            IList<T> tempList;
+            if (!elements.ContainsKey(item.Priority)) elements.Add(item.Priority, new List<T>());
+            tempList = elements[item.Priority];
+            tempList.Add(item);
         }
         public T Peek()
         {
             if (elements.Count == 0) throw new InvalidOperationException("Queue is empty.");
-            return (T)elements.Last().Value.ElementAt(0);
+            return elements.Last().Value.Last();
         }
 
         public int GetHighestPriority()
