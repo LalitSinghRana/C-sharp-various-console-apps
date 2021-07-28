@@ -12,6 +12,8 @@ namespace Day4Doc3Ex2
             var input = int.Parse(Console.ReadLine(), System.Globalization.NumberStyles.Any);
             try
             {
+                if(count == 5) throw new CustomException("You've played this game 5 time");
+
                 if(input == 1)
                 {
                     Console.WriteLine("Enter even number :");
@@ -51,7 +53,7 @@ namespace Day4Doc3Ex2
                 {
                     throw new CustomException("Error : Invalid input");
                 }
-            }catch(Exception e)
+            }catch(CustomException e)
             {
                 Console.WriteLine(e);
             }
